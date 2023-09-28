@@ -22,7 +22,7 @@ There are very good instructions here(https://minikube.sigs.k8s.io/docs/start/).
 
 As root:
 ```
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 groupadd docker(should be setup when install docker, in case not)
 usermod -aG docker feng
