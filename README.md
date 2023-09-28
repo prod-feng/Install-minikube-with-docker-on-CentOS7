@@ -7,6 +7,7 @@ First, remove any old docker package installed.Add the docker-ce repo and then i
 ```
 yum remove docker docker-common
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install  docker-ce
 ```
 
 Make sure dcoker and contanerd serverices are running:
