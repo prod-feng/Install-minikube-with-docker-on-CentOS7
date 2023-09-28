@@ -2,11 +2,13 @@
 This following steps list the way I installed minikube with docker on CentOS 7.
 
 1) Install Docker-ce
+
 First, remove any old docker package installed.Add the docker-ce repo and then install.
 ```
 yum remove docker docker-common
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
+
 Make sure dcoker and contanerd serverices are running:
 ```
   systemctl status docker
@@ -14,6 +16,7 @@ Make sure dcoker and contanerd serverices are running:
 ```
 
 2) Install minikube
+
 There are very good instructions here(https://minikube.sigs.k8s.io/docs/start/). I list all the commands together here:
 
 As root:
@@ -24,7 +27,7 @@ groupadd docker(should be setup when install docker, in case not)
 usermod -aG docker feng
 ```
 
-AS regular user to test:
+As regular user to test:
 ```
 minikube start --driver=docker
 kubectl get po -A
