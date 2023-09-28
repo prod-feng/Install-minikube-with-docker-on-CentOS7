@@ -28,7 +28,7 @@ groupadd docker(should be setup when install docker, in case not)
 usermod -aG docker feng
 ```
 
-As regular user to test:
+As regular user to test(may need to install kubectl package):
 ```
 minikube start --driver=docker
 kubectl get po -A
